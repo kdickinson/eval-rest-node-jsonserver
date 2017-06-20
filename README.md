@@ -3,14 +3,16 @@
 A node based backend of the evaluation tool using express and, for dev mode, json-server
 
 # Developer Workspace
-[![Contribute](http://beta.codenvy.com/factory/resources/codenvy-contribute.svg)](http://beta.codenvy.com/f?id=r8et9w6vohmqvro8)
+Run DB server and Web Server (no particular order)
+- npm run db
+- npm run app
 
-# Stack to use
+Then browse to localhost(or webserver of your choice):3000 using rest
 
-FROM [codenvy/node](https://hub.docker.com/r/codenvy/node/)
+NOTE: client is not yet integrated
 
-# How to run
-
-| #       | Description           | Command  |
-| :------------- |:-------------| :-----|
-| 1      | Run | `cd ${current.project.path}/app && node app.js` |
+# TODO
+1. REST server should serve only one question at a time
+    1. This will require each question to be logged in the DB as served
+1. Server should detect first and last questions served
+1. Server should check each answer of previous question (if not first) and log correctness before serving next question

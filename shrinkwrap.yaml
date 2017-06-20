@@ -1,0 +1,19 @@
+dependencies:
+  cors: 2.8.3
+packages:
+  /cors/2.8.3:
+    dependencies:
+      object-assign: 4.1.1
+      vary: 1.1.1
+    resolution:
+      integrity: sha1-TPeOHSMymnSWsvwiJbd8pbteuAI=
+  /object-assign/4.1.1:
+    resolution:
+      integrity: sha1-IQmtx5ZYh8/AXLvUQsrIv7s2CGM=
+  /vary/1.1.1:
+    resolution:
+      integrity: sha1-Z1Neu2lMHVIldFeYRmUyP1h+jTc=
+registry: 'https://registry.npmjs.org/'
+specifiers:
+  cors: ^2.8.3
+version: 3
